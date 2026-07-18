@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Kontakt Apoteker'n Café — Apotekergata 16, Ålesund. Telefon 70 10 49 70." />
+    <meta name="theme-color" content="#2c1a12" />
+    <title>Kontakt · Apoteker'n Café</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-veil" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Hopp til innhold</a>
+
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html" aria-label="Apoteker'n Café hjem">
+          <span class="brand-mark">Apoteker'n</span>
+          <span class="brand-sub">Café · Ålesund</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Åpne meny">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="nav-links" aria-label="Hovedmeny">
+          <a href="index.html">Hjem</a>
+          <a href="about.html">Om oss</a>
+          <a href="menu.html">Meny</a>
+          <a href="reviews.html">Omtaler</a>
+          <a href="contact.html" aria-current="page">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero wrap">
+        <span class="eyebrow">Kontakt</span>
+        <h1>Si hei</h1>
+        <p class="lede">Spørsmål, bestilling til take away, eller bare en hyggelig hilsen — vi hører gjerne fra deg.</p>
+        <div class="page-hero-art">
+          <img src="assets/exterior.png" alt="Fasade nær Apotekertorget" width="1400" height="600" />
+        </div>
+      </header>
+
+      <section class="section" style="padding-top: 1rem">
+        <div class="wrap contact-grid">
+          <aside class="info-panel reveal">
+            <h2>Besøk oss</h2>
+            <dl>
+              <div class="info-row">
+                <dt>Adresse</dt>
+                <dd>Apotekergata 16<br />6004 Ålesund</dd>
+              </div>
+              <div class="info-row">
+                <dt>Telefon</dt>
+                <dd><a href="tel:+4770104970">70 10 49 70</a></dd>
+              </div>
+              <div class="info-row">
+                <dt>E-post</dt>
+                <dd><a href="mailto:post@apotekern.no">post@apotekern.no</a> <span style="opacity:0.65;font-size:0.85rem">(plassholder)</span></dd>
+              </div>
+              <div class="info-row">
+                <dt>Åpningstider</dt>
+                <dd>
+                  Mandag 10–17<br />
+                  Tirsdag 10–17<br />
+                  Onsdag 10–17<br />
+                  Torsdag 10–17<br />
+                  Fredag 10–17<br />
+                  Lørdag 10–17<br />
+                  Søndag 10–17
+                </dd>
+              </div>
+              <div class="info-row">
+                <dt>Tjenester</dt>
+                <dd>Servering · Take away<br />Ingen levering</dd>
+              </div>
+            </dl>
+          </aside>
+
+          <div class="form-card reveal reveal-delay-2">
+            <h2 style="font-family: var(--font-display); font-size: 1.6rem; color: var(--espresso); margin-bottom: 0.35rem">
+              Send en melding
+            </h2>
+            <p style="color: var(--muted); margin-bottom: 1.25rem; font-size: 0.95rem">
+              Beskyttet med bot-feller, rate limits og sanitering — trygt for statisk hosting.
+            </p>
+
+            <form data-secure-form data-form-type="contact" novalidate autocomplete="on">
+              <div class="hp-field" aria-hidden="true">
+                <label>Nettsted <input type="text" name="website_url" tabindex="-1" autocomplete="off" /></label>
+              </div>
+
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Navn</label>
+                  <input id="name" name="name" type="text" maxlength="80" required autocomplete="name" />
+                  <span class="error" data-error-for="name"></span>
+                </div>
+                <div class="field">
+                  <label for="email">E-post</label>
+                  <input id="email" name="email" type="email" maxlength="120" required autocomplete="email" />
+                  <span class="error" data-error-for="email"></span>
+                </div>
+                <div class="field">
+                  <label for="phone">Telefon <span style="font-weight: 400; color: var(--muted)">(valgfritt)</span></label>
+                  <input id="phone" name="phone" type="tel" maxlength="30" autocomplete="tel" />
+                  <span class="error" data-error-for="phone"></span>
+                </div>
+                <div class="field">
+                  <label for="subject">Emne</label>
+                  <select id="subject" name="subject">
+                    <option value="Generell hilsen">Generell hilsen</option>
+                    <option value="Take away">Take away</option>
+                    <option value="Spørsmål">Spørsmål</option>
+                    <option value="Tilbakemelding">Tilbakemelding</option>
+                  </select>
+                  <span class="error" data-error-for="subject"></span>
+                </div>
+                <div class="field full">
+                  <label for="message">Melding</label>
+                  <textarea id="message" name="message" maxlength="2000" required></textarea>
+                  <span class="error" data-error-for="message"></span>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send melding</button>
+                <p class="form-note">Vi deler aldri opplysningene dine.</p>
+              </div>
+              <div class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap reveal">
+          <div class="section-head">
+            <span class="eyebrow">Kart</span>
+            <h2>Slik finner du oss</h2>
+          </div>
+          <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); aspect-ratio: 21/9; min-height: 280px">
+            <iframe
+              title="Kart til Apoteker'n Café"
+              src="https://maps.google.com/maps?q=Apotekergata%2016%2C%206004%20%C3%85lesund&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style="border: 0; min-height: 280px"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <div class="footer-brand">Apoteker'n Café</div>
+          <p>Koselig kafé i Ålesund med god kaffe, bakst og et rolig sitteområde.</p>
+        </div>
+        <div>
+          <h4>Besøk</h4>
+          <a href="contact.html">Apotekergata 16</a>
+          <a href="contact.html">6004 Ålesund</a>
+          <a href="tel:+4770104970">70 10 49 70</a>
+        </div>
+        <div>
+          <h4>Utforsk</h4>
+          <a href="about.html">Om oss</a>
+          <a href="menu.html">Meny</a>
+          <a href="reviews.html">Omtaler</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year></span> Apoteker'n Café</span>
+        <span>Ålesund</span>
+      </div>
+    </footer>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/secure-form.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

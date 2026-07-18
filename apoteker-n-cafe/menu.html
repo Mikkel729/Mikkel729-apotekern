@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Meny hos Apoteker'n Café — kaffe, frokost, lunsj og bakst. Priser er plassholdere." />
+    <meta name="theme-color" content="#2c1a12" />
+    <title>Meny · Apoteker'n Café</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page-veil" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Hopp til innhold</a>
+
+    <header class="site-header">
+      <div class="nav-inner">
+        <a class="brand" href="index.html" aria-label="Apoteker'n Café hjem">
+          <span class="brand-mark">Apoteker'n</span>
+          <span class="brand-sub">Café · Ålesund</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Åpne meny">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="nav-links" aria-label="Hovedmeny">
+          <a href="index.html">Hjem</a>
+          <a href="about.html">Om oss</a>
+          <a href="menu.html" aria-current="page">Meny</a>
+          <a href="reviews.html">Omtaler</a>
+          <a href="contact.html">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero wrap">
+        <span class="eyebrow">Meny</span>
+        <h1>Hva vi serverer</h1>
+        <p class="lede">Kaffe, småretter, frokost og lunsj. Priser merket «fra» er plassholdere — spør oss i kassen for dagens priser.</p>
+      </header>
+
+      <section class="section" style="padding-top: 0">
+        <div class="wrap">
+          <div class="menu-banner reveal">
+            <div>
+              <span class="eyebrow">Dagens bord</span>
+              <h2 style="font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.1rem); color: var(--espresso); margin: 0.4rem 0 0.75rem">
+                Kaffe først — bakst tett bak
+              </h2>
+              <p style="color: var(--muted)">
+                Servering på stedet og take away. Hurtigmat, kaffe og desserter. Ingen levering.
+              </p>
+            </div>
+            <img src="assets/menu-placeholder.jpg" alt="Kaffe og bakst" width="800" height="600" />
+          </div>
+
+          <div class="menu-toolbar reveal" role="group" aria-label="Filtrer meny">
+            <button type="button" class="chip is-active" data-menu-filter="all" aria-pressed="true">Alt</button>
+            <button type="button" class="chip" data-menu-filter="kaffe" aria-pressed="false">Kaffe</button>
+            <button type="button" class="chip" data-menu-filter="drikke" aria-pressed="false">Annen drikke</button>
+            <button type="button" class="chip" data-menu-filter="mat" aria-pressed="false">Mat</button>
+            <button type="button" class="chip" data-menu-filter="dessert" aria-pressed="false">Dessert</button>
+          </div>
+
+          <div class="menu-grid">
+            <section class="menu-category reveal" data-menu-category="kaffe">
+              <h2>Kaffe</h2>
+              <article class="menu-item">
+                <h3>Espresso</h3>
+                <span class="price">fra 39 kr</span>
+                <p><!-- PLASSHOLDER --> Kort og kraftig shot.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Americano</h3>
+                <span class="price">fra 42 kr</span>
+                <p><!-- PLASSHOLDER --> Espresso med varmt vann.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Cappuccino</h3>
+                <span class="price">fra 49 kr</span>
+                <p><!-- PLASSHOLDER --> Espresso, skummet melk og myk skum.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Café latte</h3>
+                <span class="price">fra 52 kr</span>
+                <p><!-- PLASSHOLDER --> Myk og melkaktig favoritt.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Flat white</h3>
+                <span class="price">fra 52 kr</span>
+                <p><!-- PLASSHOLDER --> Silkeaktig mikroskum.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Filterkaffe</h3>
+                <span class="price">fra 35 kr</span>
+                <p><!-- PLASSHOLDER --> Dagens brygg — spør hva som er på urmen.</p>
+              </article>
+            </section>
+
+            <section class="menu-category reveal" data-menu-category="drikke">
+              <h2>Annen drikke</h2>
+              <article class="menu-item">
+                <h3>Te</h3>
+                <span class="price">fra 39 kr</span>
+                <p><!-- PLASSHOLDER --> Utvalg av svarte, grønne og urteteer.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Chai latte</h3>
+                <span class="price">fra 55 kr</span>
+                <p><!-- PLASSHOLDER --> Krydret og varmende.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Kakao</h3>
+                <span class="price">fra 49 kr</span>
+                <p><!-- PLASSHOLDER --> Klassisk varm kakao.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Mineralvann / brus</h3>
+                <span class="price">fra 35 kr</span>
+                <p><!-- PLASSHOLDER --> Kaldt utvalg fra kjøleren.</p>
+              </article>
+            </section>
+
+            <section class="menu-category reveal" data-menu-category="mat">
+              <h2>Frokost, lunsj &amp; småretter</h2>
+              <article class="menu-item">
+                <h3>Dagens lunsj</h3>
+                <span class="price">fra 149 kr</span>
+                <p><!-- PLASSHOLDER --> Spør om dagens rett — skifter etter sesong.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Smørbrød / toast</h3>
+                <span class="price">fra 89 kr</span>
+                <p><!-- PLASSHOLDER --> Enkel og mettende — perfekt til kaffen.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Salat</h3>
+                <span class="price">fra 129 kr</span>
+                <p><!-- PLASSHOLDER --> Frisk liten rett.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Suppe</h3>
+                <span class="price">fra 99 kr</span>
+                <p><!-- PLASSHOLDER --> Varmende kopp når det er på menyen.</p>
+              </article>
+            </section>
+
+            <section class="menu-category reveal" data-menu-category="dessert">
+              <h2>Dessert &amp; bakst</h2>
+              <div style="margin-bottom: 1.25rem; border-radius: var(--radius); overflow: hidden; max-width: 420px">
+                <img src="assets/pastry-placeholder.jpg" alt="Ferske bakervarer" width="600" height="450" loading="lazy" />
+              </div>
+              <article class="menu-item">
+                <h3>Kanelbolle</h3>
+                <span class="price">fra 45 kr</span>
+                <p><!-- PLASSHOLDER --> Husets favoritt — gjerne rett fra ovnen.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Croissant</h3>
+                <span class="price">fra 42 kr</span>
+                <p><!-- PLASSHOLDER --> Sprø og smørrik.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Nøttetærte / kake av dagen</h3>
+                <span class="price">fra 69 kr</span>
+                <p><!-- PLASSHOLDER --> Spør hva som er i disken i dag.</p>
+              </article>
+              <article class="menu-item">
+                <h3>Annen bakst</h3>
+                <span class="price">fra 39 kr</span>
+                <p><!-- PLASSHOLDER --> Varierer — se glassene i kaféen.</p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <div class="footer-brand">Apoteker'n Café</div>
+          <p>Koselig kafé i Ålesund med god kaffe, bakst og et rolig sitteområde.</p>
+        </div>
+        <div>
+          <h4>Besøk</h4>
+          <a href="contact.html">Apotekergata 16</a>
+          <a href="contact.html">6004 Ålesund</a>
+          <a href="tel:+4770104970">70 10 49 70</a>
+        </div>
+        <div>
+          <h4>Utforsk</h4>
+          <a href="about.html">Om oss</a>
+          <a href="menu.html">Meny</a>
+          <a href="reviews.html">Omtaler</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© <span data-year></span> Apoteker'n Café</span>
+        <span>Ålesund</span>
+      </div>
+    </footer>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
